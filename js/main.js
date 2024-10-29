@@ -82,8 +82,8 @@ inputButton.addEventListener("click", () => {
   teamMembers.push(newMember);
   teamContacts.innerHTML = ``;
   printCard();
-});
 
-inputName.value = "";
-inputRole.value = "";
-inputEmail.value = "";
+  inputName.value = "";
+  inputRole.value = "";
+  inputEmail.value = "";
+});
