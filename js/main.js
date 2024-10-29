@@ -30,3 +30,20 @@ const team = [
     email: "danielaamet@team.com",
   },
 ];
+
+const teamContacts = document.getElementById("team-contacts");
+
+teamContacts.innerHTML = `<div class="card mb-3 bg-black text-white">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./img/male1.png" class="img-fluid" alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Name</h5>
+                    <p class="card-text">Role</p>
+                    <p class="card-text">email</p>
+                  </div>
+                </div>
+              </div>
+            </div>`;
