@@ -70,8 +70,16 @@ const printCard = () => {
   });
 };
 
-inputButton.addEventListener("click", () => {});
-
-// * ESECUZIONE
-
 printCard();
+
+inputButton.addEventListener("click", () => {
+  const newMember = {
+    fullname: inputName.value,
+    role: inputRole.value,
+    email: inputEmail.value,
+    image: "male1",
+  };
+  teamMembers.push(newMember);
+  teamContacts.innerHTML = ``;
+  printCard();
+});
