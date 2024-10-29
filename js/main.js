@@ -1,3 +1,5 @@
+// * DATI
+
 const teamMembers = [
   {
     fullname: "Marco Bianchi",
@@ -37,10 +39,19 @@ const teamMembers = [
   },
 ];
 
-const teamContacts = document.getElementById("team-contacts");
+// * COLLEGAMENTO HTML
 
-teamMembers.forEach((member) => {
-  teamContacts.innerHTML += `<div class="col- col-xl-4">
+const teamContacts = document.getElementById("team-contacts");
+const inputName = document.getElementById("fullname-input");
+const inputRole = document.getElementById("role-input");
+const inputEmail = document.getElementById("email-input");
+const inputButton = document.getElementById("button-input");
+
+// * FUNZIONI
+
+const printCard = () => {
+  teamMembers.forEach((member) => {
+    teamContacts.innerHTML += `<div class="col- col-xl-4">
     <div class="card mb-3 bg-black text-white">
         <div class="row g-0">
             <div class="col-4">
@@ -56,4 +67,11 @@ teamMembers.forEach((member) => {
         </div>
     </div>
 </div>`;
-});
+  });
+};
+
+inputButton.addEventListener("click", () => {});
+
+// * ESECUZIONE
+
+printCard();

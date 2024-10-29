@@ -32,6 +32,8 @@
   </head>
   <body>
     <div class="container">
+      <!-- HEADER -->
+
       <section class="header text-center">
         <h1 class="py-5 fw-bold">Meet our Team</h1>
         <p class="h5 py-4">
@@ -41,7 +43,49 @@
           laboriosam distinctio. Enim, culpa.
         </p>
       </section>
-      <section class="main py-5">
+
+      <!-- MAIN -->
+
+      <section class="main-header py-4">
+        <form class="row align-items-center">
+          <div class="col-3 form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="fullname-input"
+              placeholder="Mario Rossi"
+            />
+            <label class="ms-2" for="fullname-input"
+              >Inserisci Nome e Cognome</label
+            >
+          </div>
+          <div class="col-3 form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="role-input"
+              placeholder="Developer"
+            />
+            <label class="ms-2" for="role-input">Inserisci Ruolo</label>
+          </div>
+          <div class="col-3 form-floating">
+            <input
+              type="email"
+              class="form-control"
+              id="email-input"
+              placeholder="email@email.it"
+            />
+            <label class="ms-2" for="email-input">Inserisci Email</label>
+          </div>
+          <div class="col-3 form-floating">
+            <button type="button" class="btn btn-primary p-3" id="button-input">
+              AGGIUNGI
+            </button>
+          </div>
+        </form>
+      </section>
+      <hr />
+      <section class="main-body py-5">
         <div class="row row-cols-md-2 g-3" id="team-contacts"></div>
       </section>
     </div>
