@@ -60,8 +60,8 @@ const printCard = () => {
             <div class="col-8">
                 <div class="card-body">
                     <h4 class="card-title fw-bold">${member.fullname}</h4>
-                    <span class="card-text">${member.role}</span>
-                    <a class= "text-decoration-none" href="#">${member.email}<a/>
+                    <h5 class="card-text">${member.role}</h5>
+                    <a class= "fs-5 text-decoration-none" href="#">${member.email}<a/>
                 </div>
             </div>
         </div>
