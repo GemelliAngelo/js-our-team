@@ -83,3 +83,7 @@ inputButton.addEventListener("click", () => {
   teamContacts.innerHTML = ``;
   printCard();
 });
+
+inputName.value = "";
+inputRole.value = "";
+inputEmail.value = "";
